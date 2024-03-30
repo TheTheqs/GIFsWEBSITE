@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html id="fontChange" FontEx="font1" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#129299</title>
+    <link rel="stylesheet" href="Styles/MainStyle.css">
+    <link id="pagePallet" rel="stylesheet" href="Styles/LayoutTypes/ElegantMonochrome.css">
+    <link rel="stylesheet" href="Styles/LayoutTypes/FontFamilies.css">
+</head>
+<body class="layBack">
+    <header class="layTab">
+        <h1 id="infoTitle" class="adjustText"></h1>
+        <a href="Index.html"><button id="backButton" class="layButton"></button></a>
+    </header>   
+    <div class="infoDiv">
+        <img id="gifImage" src="" alt="">
+        <p id="infoContent"></p>
+    </div>    
+    <script src="Logic/LayoutControlle.js" defer></script>
+    <script src="Logic/Application.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            layoutController.setClone();
+            layoutController.changeButtonFont();
+            gifController.settingInfoPage();
+        });
+    </script>
+</body>
+</html>

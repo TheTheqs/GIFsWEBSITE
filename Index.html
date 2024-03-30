@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html id="fontChange" FontEx="font1" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFs Desmotivacionais</title>
+    <link rel="stylesheet" href="Styles/MainStyle.css">
+    <link id="pagePallet" rel="stylesheet" href="Styles/LayoutTypes/ElegantMonochrome.css">
+    <link rel="stylesheet" href="Styles/LayoutTypes/FontFamilies.css">
+</head>
+<body class="layBack">
+    <header class="layTab">
+        <h1 style="font-size: 7vw;">GIFs Desmotivacionais</h1>
+    </header>
+    <div class= paiDiv>
+        <nav class="layTab">
+            <ul>
+                <li><a href="Application.html">
+                    <button class="layButton" FontEx = "font1" >Desmotive-se!</button>
+                </a></li>
+                <li><a href="Contact.html">
+                    <button id="contB" class="layButton" FontEx = "font1">Contato</button>
+                </a></li>
+                <li><a href="About.html">
+                    <button id="abouB" class="layButton" FontEx = "font1">Sobre</button>
+                </a></li>
+            </ul>
+        </nav>
+    </div>
+    <aside>
+        <button id="changeFontB" class="fontButton"></button>
+        <button id="changePallB" class="palletButton"></button>
+    </aside>
+    <script src="Logic/LayoutControlle.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            layoutController.setClone();
+            layoutController.changeButtonFont();
+        });
+        document.getElementById("changePallB").addEventListener('click', function(){
+            layoutController.changePalet();
+        });
+        document.getElementById('changeFontB').addEventListener('click', function(){
+            layoutController.changeFont();
+        });
+    </script>
+</body>
+</html>

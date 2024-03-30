@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html id="fontChange" FontEx="font1" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="Styles/MainStyle.css">
+    <link id="pagePallet" rel="stylesheet" href="Styles/LayoutTypes/ElegantMonochrome.css">
+    <link rel="stylesheet" href="Styles/LayoutTypes/FontFamilies.css">
+</head>
+<body class="layBack">
+    <header class="layTab">
+        <a href="Index.html"><button id="backButton" class="layButton"></button></a>
+        <h1 style="font-size: 14vw;">Contato</h1>
+    </header>
+    <div class="paiDiv">
+        <nav  id="contactNav" class="layTab">
+            <ul>
+                <li><p>Desenvolvido por: Matheqs</p></h2></li>
+                <li><p>Email: Matheqs@gmail.com</p></h2></li>
+                <li><p>Perfil no GitHub: <a href="https://github.com/TheTheqs">TheTheqs</p></a></li>
+                <li><p>Repositório do projeto: <a href="https://github.com/TheTheqs/GIFs_desmotivaionais"><span style="font-size: 38px;"> GIFs Desmotivacionais</span></p></a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="Logic/LayoutControlle.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            layoutController.setClone();
+            layoutController.changeButtonFont();
+        })
+    </script>
+</body>
+</html>
